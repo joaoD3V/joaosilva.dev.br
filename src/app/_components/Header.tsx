@@ -27,10 +27,10 @@ export const routes = [
     },
   },
   {
-    path: '/articles',
+    path: '/blog',
     title: {
-      pt: 'Artigos',
-      en: 'Articles',
+      pt: 'Blog',
+      en: 'Blog',
     },
   },
   {

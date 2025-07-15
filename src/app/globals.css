@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -122,5 +123,12 @@
   }
   body {
     @apply bg-main text-text cursor-[url('/cursor.svg'),_auto];
+  }
+  .custom-prose {
+    @apply prose;
+
+    :where(*) {
+      @apply text-text lg:text-lg leading-relaxed;
+    }
   }
 }
