@@ -2,6 +2,8 @@ import Link from 'next/link';
 import { getAllPosts } from '@/lib/notion';
 import { PostCard } from './_components/PostCard';
 
+export const revalidate = 60 * 10; // 10min
+
 export default async function Articles() {
   const posts = await getAllPosts();
 

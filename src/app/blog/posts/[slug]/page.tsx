@@ -13,6 +13,8 @@ export async function generateStaticParams() {
   }));
 }
 
+export const revalidate = 60 * 10; // 10min
+
 export default async function PostPage(props: {
   params: Promise<{ slug: string }>;
 }) {

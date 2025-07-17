@@ -1,4 +1,4 @@
-import { Heart } from 'lucide-react';
+import { Coffee } from 'lucide-react';
 import type { FunctionComponent } from 'react';
 import { Separator } from '@/components/ui/separator';
 import { dayjs } from '@/lib/dayjs';
@@ -15,9 +15,9 @@ export const Footer: FunctionComponent = () => {
         <div className="mt-8 flex flex-col items-end gap-8 lg:mt-0 lg:gap-6">
           <Socials />
 
-          <span className="txt-sm flex gap-1 font-medium">
-            {dayjs().year()}. Feito com{' '}
-            <Heart className="size-5" strokeWidth={1.8} /> por João Silva Dev.
+          <span className="flex gap-1 text-base">
+            {dayjs().year()}. Feito tomando{' '}
+            <Coffee className="size-5" strokeWidth={1.8} /> por João Silva Dev.
           </span>
         </div>
       </div>
